@@ -171,7 +171,7 @@ img {
   left: 0;
   right: 0;
   background-color: #fff;
-  padding: 24px 24px 40px 16px;
+  padding: 72px 24px 40px 16px;
   opacity: 0;
   visibility: hidden;
   pointer-events: auto;
@@ -199,15 +199,14 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  margin-top: 72px;
 }
 
-.mob-current {
-  color: var(--OCEAN, #404bbf);
+.mob-menu-item,
+.mob-address-item {
+  color: #2e2f42;
 }
 
 .mob-menu-item {
-  color: var(--NAVY-BLUE, #2e2f42);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11; /* 111.111% */
@@ -226,12 +225,21 @@ img {
   gap: 24px;
   margin-top: 168px;
 }
+
 .mob-address-item {
-  color: var(--SLATE, #434455);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
+}
+
+.mob-address-link {
+  color: #2e2f42;
+}
+
+.mob-menu-link.mob-item-color,
+.mob-address-link.mob-item-color {
+  color: #404bbf;
 }
 
 .mob-soc-list {
@@ -291,10 +299,9 @@ img {
   font-weight: 700;
   line-height: 1.12;
   letter-spacing: 0.72px;
-  width: 288px;
+  max-width: 200px;
   margin-bottom: 32px;
   text-transform: capitalize;
-  padding: 40px;
 }
 
 .order-button {
@@ -335,7 +342,7 @@ img {
 /* section 2 - features */
 
 .features {
-  padding: 120px 0;
+  padding-top: 96px;
 }
 
 .visually-hidden {
@@ -356,8 +363,6 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 72px;
-  margin-top: 96px;
-  margin-bottom: 96px;
 }
 
 .features-item {
@@ -394,7 +399,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin-bottom: 16px;
 }
 
 /* section 3 - team */
@@ -402,6 +406,10 @@ img {
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
+}
+
+.container.team-container {
+  width: 296px;
 }
 
 .team-title {
@@ -626,7 +634,8 @@ img {
 /* footer */
 .footer {
   background-color: #2e2f42;
-  padding: 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-general-container {
@@ -634,7 +643,8 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 96px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .footer-container {
@@ -692,6 +702,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
 }
 
 .footer-soc-list {
@@ -703,7 +714,6 @@ img {
 .footer-soc-item {
   width: 40px;
   height: 40px;
-  margin-bottom: 72px;
 }
 
 .footer-soc-icon {
@@ -1069,25 +1079,47 @@ img {
 
   .order {
     max-width: 768px;
-    padding: 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .order-container {
+    width: auto;
+    height: auto;
+    display: block;
+    align-items: initial;
+    justify-content: initial;
   }
 
   .order-title {
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-button {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* features */
 
+  .features {
+    padding-bottom: 96px;
+  }
+  
+
   .features-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: column;
+    column-count: 2;
+    column-gap: 24px;
+    gap: 72px;
   }
 
   .features-item {
@@ -1100,6 +1132,11 @@ img {
   }
 
   /* team */
+
+  .team {
+    padding-bottom: 96px;
+    padding-top: 96px;
+  }
 
   .team-list {
     display: flex;
@@ -1118,7 +1155,8 @@ img {
   /* portfolio */
 
   .portfolio {
-    padding-top: 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .portfolio-list {
@@ -1380,5 +1418,11 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     margin-left: 80px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
