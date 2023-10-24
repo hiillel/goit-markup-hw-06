@@ -31,6 +31,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -273,7 +275,8 @@ img {
 .order {
   background: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/main-bg/people-office.jpg);
+    url(../images/images-mobile/background/back-mobile.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1044,6 +1047,13 @@ img {
     max-width: 768px;
   }
 
+  /* images */
+  @media screen and (min-resolution: 192dpi) {
+    .order {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/images-tablet/background/back-tablet-min.jpg);
+    }
+  }
   /* header */
 
   .header-logo {
@@ -1272,6 +1282,14 @@ img {
     max-width: 1158px;
   }
 
+  /* images */
+  @media screen and (min-resolution: 192dpi) {
+    .order {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/main-bg/people-office.jpg);
+    }
+  }
+
   /* header */
 
   .header-logo {
@@ -1364,7 +1382,7 @@ img {
   }
 
   /* team */
-  
+
   .container.team-container {
     width: auto;
   }
