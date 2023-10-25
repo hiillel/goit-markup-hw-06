@@ -294,8 +294,6 @@ img {
 }
 
 .order-container {
-  width: 320px;
-  height: 432px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,6 +321,10 @@ img {
   height: 56px;
   border: none;
   cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 16px 32px;
+  gap: 10px;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -337,22 +339,11 @@ img {
   background-color: #404bbf;
 }
 
-.order-button-text {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
-}
-
 /* section 2 - features */
 
 .features {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -415,7 +406,8 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .container.team-container {
@@ -527,8 +519,8 @@ img {
 /* section 4 - portfolio */
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-container {
@@ -549,7 +541,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 72px;
-  margin-top: 96px;
 }
 
 .portfolio-list {
@@ -652,7 +643,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -712,7 +702,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .footer-soc-list {
@@ -1058,7 +1047,7 @@ img {
   @media screen and (min-resolution: 192dpi) {
     .order {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/main-bg/people-office.jpg);
+        url(../images/images-tablet/background/back-tab-2x.jpg);
     }
   }
 
@@ -1240,6 +1229,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    width: 584px;
   }
 
   .footer-container {
@@ -1250,7 +1240,6 @@ img {
   .footer-soc-container {
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: 24px;
     padding-top: 0;
   }
 
@@ -1297,7 +1286,7 @@ img {
   @media screen and (min-resolution: 192dpi) {
     .order {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/main-bg/people-office.jpg);
+        url(../images/main-bg/back-deks-2x.jpg);
     }
   }
 
@@ -1364,6 +1353,10 @@ img {
 
   /* features */
 
+  .container.features-container {
+    padding: 120px 0;
+  }
+
   .features-list {
     flex-direction: row;
     gap: 24px;
@@ -1396,6 +1389,7 @@ img {
 
   .container.team-container {
     width: auto;
+    padding: 120px 0;
   }
   .team-title {
     display: flex;
@@ -1420,8 +1414,9 @@ img {
 
   /* portfolio */
 
-  .portfolio-container {
+  .container.portfolio-container {
     max-height: 1240px;
+    padding: 120px 0;
   }
 
   .portfolio-title {
@@ -1458,6 +1453,7 @@ img {
 
   .footer-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-logo {
