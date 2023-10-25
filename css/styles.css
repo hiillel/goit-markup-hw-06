@@ -286,6 +286,13 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .order {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/images-mobile/background/back-mob-2x.jpg);
+  }
+}
+
 .order-container {
   width: 320px;
   height: 432px;
@@ -1051,9 +1058,10 @@ img {
   @media screen and (min-resolution: 192dpi) {
     .order {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/images-tablet/background/back-tablet-min.jpg);
+        url(../images/main-bg/people-office.jpg);
     }
   }
+
   /* header */
 
   .header-logo {
@@ -1175,6 +1183,9 @@ img {
   }
 
   /* team */
+  .container.team-container {
+    width: auto;
+  }
 
   .team {
     padding-bottom: 96px;
